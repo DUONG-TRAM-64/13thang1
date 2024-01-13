@@ -1,0 +1,33 @@
+address { 
+    display: -ms-inline-flexbox;
+    font-style: oblique;
+}
+.nam {
+    color: blueviolet;
+}
+.t {
+    font-size:xx-large;
+}
+blockquote {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+mark {
+    background-color: chartreuse;
+    color:black;
+}
+p {
+    color: rgb(5, 5, 5);
+}
+pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0;
+}
+progress {
+    color: deeppink;
+}

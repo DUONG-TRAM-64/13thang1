@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <meta charset="utf-8">
+        <title>Webcoban</title>
+    <body >
+        <h1>Bắt đầu học các thẻ từ đây</h1>
+        <hr>
+        <h2>dạng thẻ basic</h2>
+        <p>thẻ hr là dùng để tạo đường phân cách nằm ngang giống ở trên</p>
+        <p>thẻ p dùng để viết văn bản</p>
+        <br>
+        <!-- thẻ br dùng để ngắt xuống dòng (break) -->
+        <hr>
+        <h2>Dạng thẻ formatting</h2>
+        <p>đây là thẻ <abbr title="viết tắt">VT</abbr> mà ít khi dùng tới</p>
+        <!-- dùng thẻ địa chỉ để định dạng chữ riêng biệt -->
+        <address>
+            <p>Được viết bởi: Trương Văn Quy</p>
+            <p>Website: http://webcoban.vn</p>
+            <p>Địa chỉ: Cần Thơ, Việt Nam</p>
+        </address>
+        <!-- dùng thẻ b để in đậm và kết hợp class để chỉnh màu css -->
+        <p class="nam">A Phủ là một chàng trai <b>người dân tộc Mèo</b></p>
+        <!-- <p>- Tài liệu học <bdo>Lập trình viên</bdo> cơ bản.</p> -->
+        <!--  ltr là giá trị mặc định, không thể đổi thành chữ khác -->
+        <!-- rtl dùng để đảo ngược văn bản  -->
+        <p>- Tài liệu học <bdo dir="rtl">Lập Trình Web một trong hai sẽ thay đổi</bdo> cơ bản.</p>
+        <p>- Tài liệu học <bdo dir="ltr">Lập Trình Web một trong hai sẽ thay đổi</bdo> cơ bản.</p>
+        <!-- thẻ big dùng để làm chữ to hơn bình thường -->
+        <p><span class="t">Sớm tự khẳng định tính cách gan góc</span></p>
+        <!-- định dạng chữ như lời trích dẫn, có thụt đầu dòng -->
+        <blockquote cite="http://www.worldwildlife.org/about">For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</blockquote>
+        <!-- định dạng chữ như kiểu chữ code -->
+        <code>Hello world Trải qua những ngày tháng đọa đày cùng cực trong nhà Thống Lý</code>
+        <!-- thẻ del để kẻ ngang lên văn bản -->
+        <p style="font-size: large;">Trường là một người <del>hiền khô</del></p>
+        <p> <em>xác định văn bản chữ nghiêng</em></p>
+        <p><i>đây cũng là chữ in nghiêng nhưng dùng thẻ i</i></p>
+        <p style="color: brown;"> có chắc yêu là đây<ins> yêu là yêu ai</ins> hahahahaha</p>
+        <kbd style="color: coral;">Đây kiểu như là định dạng tổ hợp phím như: Alt + F4</kbd>
+        <!-- thẻ mark dùng  để đánh hightlight đoạn văn bản khi cần-->
+        <p> Tài liệu học <mark>anh văn căn bản</mark></p>
+        <!-- thẻ meter dùng để taoh 1 thanh như là pin trong điện thoại
+            low : khi giá trị hiện tại dưới ngưỡng thấp, màu của phần tử <meter> sẽ thay đổi
+            high: khi giá trị hiện tại trên ngưỡng cao, màu của phần tử <meter> sẽ thay đổi
+        -->
+        <meter min="0" max="10" low="5" high="8" value="4"></meter>
+        <meter min="0" max="100" low="50" high="70" value="80"></meter>
+        <meter min="0" max="100" low="50" high="70" value="40"></meter>
+        <!-- không xóa những dấu khaongr trắng thừa khi nhập -->
+        <pre style="font-size: 20px;">Trường              
+            học giỏi
+
+        </pre>
+        <progress max="10" value="0" id="tientrinh"></progress>
+        <button onclick="myFunction()">Bắt đầu</button>
+        <!-- cái này chưa học -->
+        <script>
+            var i = 1;
+            function myFunction() {     
+                setTimeout(function () {   
+                    document.getElementById("tientrinh").value = i;    
+                    i++;                 
+                    if (i <= 10) {         
+                        myFunction();           
+                    }                      
+                }, 1000)
+            }
+        </script>
+        <!-- thẻ wbr dùng để xuống dòng bằng cách tương thích với thiết bị người dùng  -->
+        <p>hvjhdjvhdghdsvdhvhđhhdhdgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg<wbr> <wbr>fvhgdhdvhđhd <wbr></p>
+        <!--  thẻ subviết chữ nhỏ ở dưới chữ thường -->
+        <p>H<sub>2</sub>O</p>
+        <!--  thẻ sup viết chữ nhỏ ở trên chữ thường ( số mũ)-->
+        <p>3<sup>2</sup></p>
+    </body>
+</html>
